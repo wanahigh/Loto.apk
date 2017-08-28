@@ -116,44 +116,49 @@ app.initialize();
 
 
 function sEt() {
-    let var1 = document.getElementById("inject").innerHTML;
+    var var1 = document.getElementById("inject").innerHTML;
     localStorage.setItem('numero1',var1);// nom, valeur du localstorage
 
 
-    let var2 = document.getElementById("inject2").innerHTML;
+    var var2 = document.getElementById("inject2").innerHTML;
     localStorage.setItem('numero2',var2);// nom, valeur du localstorage
 
 
-    let var3 = document.getElementById("inject3").innerHTML;
+    var var3 = document.getElementById("inject3").innerHTML;
     localStorage.setItem('numero3',var3);// nom, valeur du localstorage
 
-    let var4 = document.getElementById("inject4").innerHTML;
+    var var4 = document.getElementById("inject4").innerHTML;
     localStorage.setItem('numero4',var4);// nom, valeur du localstorage
 
 
-    let var5 = document.getElementById("inject5").innerHTML;
+    var var5 = document.getElementById("inject5").innerHTML;
     localStorage.setItem('numero5',var5);// nom, valeur du localstorage
 
 
-    let var6 = document.getElementById("inject6").innerHTML;
+    var var6 = document.getElementById("inject6").innerHTML;
     localStorage.setItem('numero6',var6);// nom, valeur du localstorage
+
+
 
 
 }
 function gEt(){
-    var myObj= JSON.stringify({numero1:"var1",numero2:"var2,numero3:"var3",numero4:"var4",numero5:"var5",numero6:"var6",numero7:"var7"});
-    myJSON = JSON.stringify(myObj);
-    localStorage.setItem("testJson", myJSON);
 
+    var7=  localStorage.getItem("numero1","");
+    $('span').html(var7);
+
+    var8=  localStorage.getItem("numero2","");
+    $('span2').html(var8);
+
+    var9=  localStorage.getItem("numero3","");
+    $('span3').html(var9);
+
+    var10=  localStorage.getItem("numero4","");
+    $('span4').html(var10);
+
+    var11=  localStorage.getItem("numero5","");
+    $('span5').html(var11);
+
+    var12=  localStorage.getItem("numero6","");
+    $('span6').html(var12);
 }
-
-    $("#envoyer").click(function(){
-
-        $.ajax({
-            url : 'cible.html.php',
-            type : 'POST', // Le type de la requête HTTP, ici devenu POST
-            data : myObj// On fait passer nos variables, exactement comme en GET, au script more_com.php
-            dataType : 'html'
-        });
-
-    });

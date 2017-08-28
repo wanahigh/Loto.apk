@@ -10,7 +10,7 @@
     "cordova-plugin-websql": {
         "source": {
             "type": "registry",
-            "id": "cordova-plugin-websql"
+            "id": "cordova-plugin-websql@0.0.10"
         },
         "is_top_level": true,
         "variables": {}
