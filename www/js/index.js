@@ -44,14 +44,14 @@ var app = {
     }
 };
 
-var i =0
+var i =0;
 if(i <=6)
 {
 
     function getRandomIntInclusive(min, max) {
         min = Math.ceil(0);
         max = Math.floor(45);
-        i++
+        i++;
         return Math.floor(Math.random() * (max - min +1)) + min;
 
     }
@@ -114,20 +114,46 @@ app.initialize();
 
 
 
+
 function sEt() {
-    localStorage.setItem.numero1.innerHTML.valueOf();
-    localStorage.setItem.numero2.innerHTML.valueOf();
-    localStorage.setItem.numero3.innerHTML.valueOf();
-    localStorage.setItem.numero4.innerHTML.valueOf();
-    localStorage.setItem.numero5.innerHTML.valueOf();
-    localStorage.setItem.numero6.innerHTML.valueOf();
-    localStorage.setItem.numero7.innerHTML.valueOf();
-};
+    let var1 = document.getElementById("inject").innerHTML;
+    localStorage.setItem('numero1',var1);// nom, valeur du localstorage
 
 
-function btn(){
-    document.getElementById("localS").addEventListener("click", showLocalStorage);
+    let var2 = document.getElementById("inject2").innerHTML;
+    localStorage.setItem('numero2',var2);// nom, valeur du localstorage
 
-    localStorage._showElement();
+
+    let var3 = document.getElementById("inject3").innerHTML;
+    localStorage.setItem('numero3',var3);// nom, valeur du localstorage
+
+    let var4 = document.getElementById("inject4").innerHTML;
+    localStorage.setItem('numero4',var4);// nom, valeur du localstorage
+
+
+    let var5 = document.getElementById("inject5").innerHTML;
+    localStorage.setItem('numero5',var5);// nom, valeur du localstorage
+
+
+    let var6 = document.getElementById("inject6").innerHTML;
+    localStorage.setItem('numero6',var6);// nom, valeur du localstorage
+
 
 }
+function gEt(){
+    var myObj= JSON.stringify({numero1:"var1",numero2:"var2,numero3:"var3",numero4:"var4",numero5:"var5",numero6:"var6",numero7:"var7"});
+    myJSON = JSON.stringify(myObj);
+    localStorage.setItem("testJson", myJSON);
+
+}
+
+    $("#envoyer").click(function(){
+
+        $.ajax({
+            url : 'cible.html.php',
+            type : 'POST', // Le type de la requête HTTP, ici devenu POST
+            data : myObj// On fait passer nos variables, exactement comme en GET, au script more_com.php
+            dataType : 'html'
+        });
+
+    });

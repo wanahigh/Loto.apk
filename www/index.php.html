@@ -63,7 +63,7 @@
 
     <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
         for="demo-menu-lower-left">
-        <li class="mdl-menu__item">Some Action</li>
+        <a href="cible.php.html"><li onclick="gEt()"  class="mdl-menu__item">Some Action</li></a>
         <li class="mdl-menu__item mdl-menu__item--full-bleed-divider">Another Action</li>
         <li disabled class="mdl-menu__item">Disabled Action</li>
         <li class="mdl-menu__item">Yet Another Action</li>
@@ -99,32 +99,38 @@
 
     <span class="container">
         <div style="background-color: #80bdff;text-align: center;"  class="row">
-        <span value="test" id="inject"  name="numero1" onchange=localStorage.numero1=this.value  style="background-color: #80bdff;" class="col s1">4(</span>
-        <span value="" id="inject2" name="numero2" onchange=localStorage.numero2=this.value style="background-color: #80bdff;" class="col s1"></span>
-        <span value="" id="inject3" name="numero3" onchange=localStorage.numero3=this.value  style="background-color: #80bdff;" class="col s1"></span>
-        <span value="" id="inject4"  name="numero4" onchange=localStorage.numero4=this.value style="background-color: #80bdff;" class="col s1"></span>
-        <span value="" id="inject5"  name="numero5" onchange=localStorage.numero5=this.value style="background-color: #80bdff;" class="col s1"></span>
-        <span value=""  id="inject6" name="numero6"  onchange=localStorage.numero6=this.value style="background-color: #80bdff;" class="col s1"></span>
-        <span value="" id="inject7" name="numero7" onchange=localStorage.numero7=this.value    style="background-color: #80bdff;" class="col s1"></span>
+        <span value="test" id="inject"  name="numero1"   style="background-color: #80bdff;" class="col s1">4(</span>
+        <span value="" id="inject2" name="numero2"  style="background-color: #80bdff;" class="col s1"></span>
+        <span value="" id="inject3" name="numero3"   style="background-color: #80bdff;" class="col s1"></span>
+        <span value="" id="inject4"  name="numero4"  style="background-color: #80bdff;" class="col s1"></span>
+        <span value="" id="inject5"  name="numero5"  style="background-color: #80bdff;" class="col s1"></span>
+        <span value=""  id="inject6" name="numero6"  style="background-color: #80bdff;" class="col s1"></span>
+        <span value="" id="inject7" name="numero7"    style="background-color: #80bdff;" class="col s1"></span>
     </div>
 
-        <button type="submit" onclick="sEt()" id="bouton"  class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+        <button style="margin-top:20px" type="submit" onclick="sEt()" id="bouton"  class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
        Generer ton loto
     </button>
-        <div class="container">
-        <div style="background-color: #80bdff;text-align: center"  class="row">
-        <span id="span"  style="background-color: #80bdff;" class="col s1"></span>
-        <span id="span4" style="background-color: #80bdff;" class="col s1"></span>
-        <span id="span5" style="background-color: #80bdff;" class="col s1"></span>
-        <span id="span6" style="background-color: #80bdff;" class="col s1"></span>
-        <span id="span7" style="background-color: #80bdff;" class="col s1"></span>
-    </div>
-            </div>
 
-
-
-<button onclick="btn()" id="localS" class="mdl-button mdl-js-button" style="margin-top:10px;margin-left:25%;" id="showLocalStorage">Afficher les dernier tirage</button>
+        <button  id="envoyer" class="mdl-button mdl-js-button" style="margin-top:10px;margin-left:25%;" id="resultat">Afficher les dernier tirage</button>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+
+
+            <div class="container">
+            <div style="background-color: #80bdff;text-align: center"  class="row">
+            <span value="" name="spa" id="span"  style="background-color: #80bdff;" class="col s1"></span>
+                <span value="" name="spa2" id="span2"  style="background-color: #80bdff;" class="col s1"></span>
+                 <span value="" name="spa3" id="span3"  style="background-color: #80bdff;" class="col s1"></span>
+            <span value="" name="spa4" id="span4" style="background-color: #80bdff;" class="col s1"></span>
+            <span value="" name="spa5" id="span5" style="background-color: #80bdff;" class="col s1"></span>
+            <span value="" name="spa6" id="span6" style="background-color: #80bdff;" class="col s1"></span>
+            <span value="" name="spa7" id="span7" style="background-color: #80bdff;" class="col s1"></span>
+        </div>
+                </div>
+
+
+
+
 
 
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
