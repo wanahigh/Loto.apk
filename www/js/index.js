@@ -142,23 +142,39 @@ function sEt() {
 
 
 }
-function gEt(){
 
-    var7=  localStorage.getItem("numero1","");
-    $('span').html(var7);
+function gEt() {
+    var7 = localStorage.getItem("numero1", "");
 
-    var8=  localStorage.getItem("numero2","");
-    $('span2').html(var8);
 
-    var9=  localStorage.getItem("numero3","");
-    $('span3').html(var9);
+    var8 = localStorage.getItem("numero2", "");
 
-    var10=  localStorage.getItem("numero4","");
-    $('span4').html(var10);
 
-    var11=  localStorage.getItem("numero5","");
-    $('span5').html(var11);
+    var9 = localStorage.getItem("numero3", "");
 
-    var12=  localStorage.getItem("numero6","");
-    $('span6').html(var12);
+
+    var10 = localStorage.getItem("numero4", "");
+
+
+    var11 = localStorage.getItem("numero5", "");
+
+
+    var12 = localStorage.getItem("numero6", "");
+
+
+    var tableau = new Array(var7,var9,var10,var11,var12);
+
+    var tab1 = tableau[0];
+    var tab2 = tableau[1];
+    var tab3 = tableau[2];
+    var tab4 = tableau[3];
+    var tab5 = tableau[4];
+    var tab6 = tableau[5];
+
+    console.log(tableau)
+
+    $('span').html(var7,var8,var9,var10,var11);
+
+
 }
+
