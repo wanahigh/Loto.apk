@@ -164,16 +164,20 @@ function gEt() {
 
     var tableau = new Array(var7,var9,var10,var11,var12);
 
-    var tab1 = tableau[0];
-    var tab2 = tableau[1];
-    var tab3 = tableau[2];
-    var tab4 = tableau[3];
-    var tab5 = tableau[4];
-    var tab6 = tableau[5];
+    for (var i = 0; i < tableau.length; i++) {
 
+
+
+        $('span').html(var7);
+
+
+
+
+
+    }
     console.log(tableau)
 
-    $('span').html(var7,var8,var9,var10,var11);
+    ;
 
 
 }
